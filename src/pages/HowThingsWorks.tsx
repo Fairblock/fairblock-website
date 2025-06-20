@@ -55,9 +55,9 @@ const HowThingsWorks = () => {
           <p className="xl:w-[90%] mx-auto text-justify">
             Fairblock is a decentralized cryptographic computer that runs secure
             and performant MPC-based confidential computation. Fairblock can
-            host “dine-in” DeFi, AI, and gaming economies for cheap and fast
+            host “dine-in” applications such as confidential stablecoins, protected intents, AI private data marketplace, and sealed-bid auctions for cheap and fast
             execution, or seamlessly "deliver" these capabilities to deep-rooted
-            ecosystems such as EVM, Cosmos, and Solana. Fairblock consists of
+            ecosystems such as Arbitrum, Hyperliquid, Solana, Uniswap, and Cosmos chains. Fairblock consists of
             two core elements: FairyRing and FairyKit. FairyRing abstracts away
             intensive cryptographic operations for applications built within its
             chain as well as those built on alternative blockchains. For
@@ -146,27 +146,16 @@ const HowThingsWorks = () => {
           />
         </div>
         <p className="text-justify">
-          Simplicity is the last step of art, we prioritize simplicity through
-          our multimodal and dynamic design to fine-tune performance and
-          security, introducing complexity only when essential. Fairblock
-          leverages threshold IBE (aka witness encryption) for: a. Applications
-          that only require pre-execution mempool-privacy e.g. sealed-bid
-          auctions or frontrunning protection b. Information access control e.g.
-          pay-to-decrypt to achieve minimal bandwidth and computation overhead.
-          Other MPC schemes such as Threshold FHE (CKKS) and SPDZ are used for
-          applications that require computation over encrypted transactions or
-          data such as confidential AI inference or dark pools. MPC schemes can
-          be combined with TEEs to reduce reliance on a single TEE’s hardware
-          security and mitigate MPCs honest majority collusion risks. ZKPs are
-          necessary in some MPC applications to ensure the validity of private
-          inputs whenever multiple parties interact with each other in a shared
-          private state.
+          Simplicity is the ultimate form of art. We prioritize simplicity and usability through a multimodal, dynamic design—fine-tuning performance and security, and introducing complexity only when essential.
+
+Fairblock leverages DKG and threshold IBE (sometimes referred to as conditional decryption) for applications that require pre-execution confidentiality—such as sealed-bid auctions, protected trading intents, and AI data marketplaces—achieving minimal bandwidth and computation overhead.
+
+For applications requiring computation over encrypted transactions or private data—such as confidential stablecoins, private AI inference, and dark pools—we employ advanced MPC and HE schemes, including Twisted ElGamal, threshold FHE (CKKS), and SPDZ.
+
+MPC schemes can also be combined with TEEs to mitigate reliance on any single TEE’s hardware security and reduce an MPC’s honest-majority collusion risks. Additionally, ZKPs are used in select MPC applications to ensure the validity of private inputs when multiple parties interact within a shared private state.
         </p>
         <p>
-          As advanced MPC schemes become more accessible, Fairblock will offer
-          them through FairyKit to partner protocols and native applications. We
-          are beginning by offering threshold IBE and CKKS due to their
-          immediate benefit to the blockchain design space and user experience.
+          As confidentiality technology advances, Fairblock will continuously deliver cutting-edge schemes through FairyKit, empowering partner protocols and native applications. We begin with threshold IBE and HE (Twisted ElGamal and CKKS), unlocking new performance frontiers and driving the next wave of confidential and trustworthy open finance.
         </p>
       </div>
 
