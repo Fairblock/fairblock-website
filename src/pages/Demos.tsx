@@ -47,35 +47,31 @@ const Demos = () => {
                 <ul className="flex flex-col gap-8 mb-5">
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Fairblock's leaderless and rapid auctions for fair and dynamic price discovery in intents and fixed-rate lending markets
+                    Confidential and compliant stablecoins with encrypted amounts
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Private but compliant transfers for stablecoins, RWA, and large institutional players
+                    Fixed-rate and fair lending market with encrypted bids and rates
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Frontrunning and forced liquidation protection in generalized intents, and trading
+                    Dynamic price discovery for intents and fair token launches through leaderless sealed-bid auctions
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Confidential lending and clearing markets
+                    Protected orders against forced liquidations, frontrunning, and market impact of large trades
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Unstoppable and unruggable AI models through MPC and TEEs
+                    Data marketplace designed to unlock high-quality training and inference data for AI while preserving confidentiality and enabling secure monetization
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Private data monetization and access control for AI models through MPC
+                    Confidential AI inference on encrypted inputs
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Confidential AI insights from encrypted inputs through threshold FHE (CKKS)
-                  </li>
-                  <li>
-                    <Star className="inline mr-3 w-4" />
-                    Hidden-information GameFi such as parimutuel price prediction, mystery boxes, and real-time poker without trusted parties
+                    Hidden-information GameFi such as parimutuel price prediction, mystery boxes, real pokers without trusted parties, and VRF service
                   </li>
                 </ul>
               </div>

@@ -36,9 +36,9 @@ export const NAV_OPTIONS:NavOption[] = [
   },
   {
     type: "link",
-    label: "Demos",
+    label: "cApps",
     logo: <TbApps className="md:hidden text-2xl" />,
-    to: "/demos",
+    to: "/cApps",
   },
   {
     type: "anchor",

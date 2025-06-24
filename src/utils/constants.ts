@@ -30,6 +30,8 @@ import {
   CHARACTER_BLUE_SCROLL_IMAGE,
   CHARACTER_GREEN_KEY_IMAGE,
   CHARACTER_PURPLE_LANTERN_IMAGE,
+  CONFIDENTIAL_STABLECOINS_IMG,
+  CONFIDENTIAL_STABLECOINS_VIDEO_URL,
 } from "./images";
 
 import {
@@ -47,6 +49,7 @@ import {
   ON_CHAIN_TIME_BOMB_LINK,
   TIME_CAPSULE_LINK,
   PRIVATE_GOVERNANCE_LINK,
+  CONFIDENTIAL_STABLECOINS_LINK,
 } from "./links";
 
 // *************** APP CONSTANTS - FOOTER - START ***************
@@ -736,6 +739,15 @@ export const NEWS_CARDS_ARRAY_2 = [
 // *************** DEMOS PAGE - DEMO APPS - START ***************
 
 export const DEMOS_ARRAY = [
+  {
+    demoId: "confidentialStablecoins",
+    demoName: "Confidential stablecoins",
+    demoDescription:
+      "Confidential stablecoins are the final catalyst before institutions go “All In.” Fairblock makes them fast, compliant, and seamless—across any EVM chain and Solana. We use a multimodal cryptographic stack—including homomorphic encryption, MPC, lightweight ZKPs, and cross-chain message passing—to deliver confidential stablecoins without compromising performance, security, or user accessibility. This website only serves as an educational demo for confidential stablecoins.",
+    demoLink: CONFIDENTIAL_STABLECOINS_LINK,
+    demoVideoThumbnail: CONFIDENTIAL_STABLECOINS_IMG,
+    demoVideoUrl: CONFIDENTIAL_STABLECOINS_VIDEO_URL,
+  },
   {
     demoId: "fairates",
     demoName: "Fairates",

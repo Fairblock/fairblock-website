@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Main /> },
       { path: "how-it-works", element: <HowThingsWorks /> },
-      { path: "demos", element: <Demos /> },
+      { path: "cApps", element: <Demos /> },
       { path: "articles", element: <Articles /> },
       { path: "careers", element: <Careers /> },
       { path: "*", element: <Error /> }, // Catch-all route

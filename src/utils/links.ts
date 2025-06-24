@@ -9,7 +9,8 @@ export const DOCS_C_APP_LINK = "https://docs.fairblock.network/docs/start-a-capp
 export const FAIR_BLOCK_RFP_LIST = "http://fairblock.notion.site/Fairblock-Builders-Program-RFP-List-69cd0c7747904e89bd27257a359a80f1"
 
 // DEMO PAGE - APPS
-export const FAIRATES_LINK = ""
+export const CONFIDENTIAL_STABLECOINS_LINK = "https://confidential-usdc-demo.vercel.app/";
+export const FAIRATES_LINK = "";
 export const FAIRY_COW_SWAP_LINK = "https://swap.fairycow.fi/#/11155111/limit/WETH?tab=open&page=1";
 export const FAIR_EX_LINK = "https://dex.fairblock.network/swap";
 export const UNRUGGABLE_AI_LINK = "";

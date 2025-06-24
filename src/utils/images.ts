@@ -67,6 +67,7 @@ export const CC_FLOW_DARK = "/images/how-it-works-page/cc-flow-dark.png";
 // ******************** DEMOS PAGE - START ********************
 
 // Demo video URL's
+export const CONFIDENTIAL_STABLECOINS_VIDEO_URL = "";
 export const FAIRATES_VIDEO_URL = "";
 export const FAIRY_COW_SWAP_VIDEO_URL = "/videos/demo-page/fairy-cow-swap.mp4";
 export const FAIR_EX_VIDEO_URL = "/videos/demo-page/fair-ex.mp4";
@@ -78,7 +79,8 @@ export const TIME_CAPSULE_VIDEO_URL = "/videos/demo-page/time-capsule.mp4";
 export const PRIVATE_GOVERNANCE_VIDEO_URL = "/videos/demo-page/private-governance.mp4";
 
 // Demo video thumbnail's
-export const FAIRATES_IMG = "/images/demo-page/fairates.jpg"
+export const CONFIDENTIAL_STABLECOINS_IMG = "/images/demo-page/confidential-stablecoins.png";
+export const FAIRATES_IMG = "/images/demo-page/fairates.jpg";
 export const FAIRY_COW_SWAP_IMG = "/images/demo-page/fairy-cow-img.png";
 export const FAIR_EX_IMG = "/images/demo-page/fair-ex-img.png";
 export const UNRUGGABLE_AI_IMG = "/images/demo-page/unruggable-ai.jpg"
