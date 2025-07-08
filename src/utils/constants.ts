@@ -16,7 +16,6 @@ import {
   LAZY_KILLER_IMG,
   VERIFIABLE_RANDOMNESS_IMG,
   ON_CHAIN_TIME_BOMB_IMG,
-  TIME_CAPSULE_IMG,
   PRIVATE_GOVERNANCE_IMG,
   FAIRATES_VIDEO_URL,
   FAIRY_COW_SWAP_VIDEO_URL,
@@ -25,13 +24,14 @@ import {
   LAZY_KILLER_VIDEO_URL,
   VERIFIABLE_RANDOMNESS_VIDEO_URL,
   ON_CHAIN_TIME_BOMB_VIDEO_URL,
-  TIME_CAPSULE_VIDEO_URL,
   PRIVATE_GOVERNANCE_VIDEO_URL,
   CHARACTER_BLUE_SCROLL_IMAGE,
   CHARACTER_GREEN_KEY_IMAGE,
   CHARACTER_PURPLE_LANTERN_IMAGE,
   CONFIDENTIAL_STABLECOINS_IMG,
   CONFIDENTIAL_STABLECOINS_VIDEO_URL,
+  TIME_MACHINE_IMG,
+  TIME_MACHINE_VIDEO_URL
 } from "./images";
 
 import {
@@ -47,7 +47,7 @@ import {
   LAZY_KILLER_LINK,
   VERIFIABLE_RANDOMNESS_LINK,
   ON_CHAIN_TIME_BOMB_LINK,
-  TIME_CAPSULE_LINK,
+  TIME_MACHINE_LINK,
   PRIVATE_GOVERNANCE_LINK,
   CONFIDENTIAL_STABLECOINS_LINK,
 } from "./links";
@@ -767,6 +767,15 @@ export const DEMOS_ARRAY = [
     demoVideoUrl: FAIRY_COW_SWAP_VIDEO_URL,
   },
   {
+    demoId: "time-machine",
+    demoName: "Time Machine",
+    demoDescription:
+      "Encrypt your price prediction. Your alpha stays confidential. The earlier and more accurate you are, the more you earn.",
+    demoLink: TIME_MACHINE_LINK,
+    demoVideoThumbnail: TIME_MACHINE_IMG,
+    demoVideoUrl: TIME_MACHINE_VIDEO_URL,
+  },
+  {
     demoId: "FairEx",
     demoName: "FairEx",
     demoDescription:
@@ -810,15 +819,6 @@ export const DEMOS_ARRAY = [
     demoLink: ON_CHAIN_TIME_BOMB_LINK,
     demoVideoThumbnail: ON_CHAIN_TIME_BOMB_IMG,
     demoVideoUrl: ON_CHAIN_TIME_BOMB_VIDEO_URL,
-  },
-  {
-    demoId: "time-capsule",
-    demoName: "Time Capsule",
-    demoDescription:
-      "Our Time Capsule allows users to grasp the power of encryption tangibly.",
-    demoLink: TIME_CAPSULE_LINK,
-    demoVideoThumbnail: TIME_CAPSULE_IMG,
-    demoVideoUrl: TIME_CAPSULE_VIDEO_URL,
   },
   {
     demoId: "private-gov",

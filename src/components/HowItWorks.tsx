@@ -29,7 +29,7 @@ const HowItWorks = () => {
             MPC and customizable for optimal application performance with
             multimodal cryptography.
           </p>
-          <button className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-medium mt-6 px-6 py-2 rounded-3xl text-black w-fit">
+          <button className="bg-[#58BDF6] hover:bg-[#718BD2] border border-black/50 dark:border-white/50 font-medium mt-6 px-6 py-2 rounded-3xl text-black w-fit">
             <Link to="/how-it-works">
               Learn How It Works
             </Link>
@@ -37,7 +37,7 @@ const HowItWorks = () => {
         </div>
 
         {/* HOW IT WORKS IMAGE CONTAINER */}
-        <div className="w-full lg:w-[48%]">
+        <div className="w-full lg:w-[60%]">
           <img
             src={darkMode ? HOW_IT_WORKS_DARK_IMAGE : HOW_IT_WORKS_LIGHT_IMAGE}
             loading="lazy"

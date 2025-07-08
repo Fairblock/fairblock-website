@@ -70,24 +70,24 @@ export const CC_FLOW_DARK = "/images/how-it-works-page/cc-flow-dark.png";
 export const CONFIDENTIAL_STABLECOINS_VIDEO_URL = "";
 export const FAIRATES_VIDEO_URL = "";
 export const FAIRY_COW_SWAP_VIDEO_URL = "/videos/demo-page/fairy-cow-swap.mp4";
+export const TIME_MACHINE_VIDEO_URL = "";
 export const FAIR_EX_VIDEO_URL = "/videos/demo-page/fair-ex.mp4";
 export const UNRUGGABLE_AI_VIDEO_URL = "";
 export const LAZY_KILLER_VIDEO_URL = "/videos/demo-page/lazy-killer.mp4";
 export const VERIFIABLE_RANDOMNESS_VIDEO_URL = "/videos/demo-page/verifiable-randomness.mp4";
 export const ON_CHAIN_TIME_BOMB_VIDEO_URL = "/videos/demo-page/onchain-time-bomb.mp4";
-export const TIME_CAPSULE_VIDEO_URL = "/videos/demo-page/time-capsule.mp4";
 export const PRIVATE_GOVERNANCE_VIDEO_URL = "/videos/demo-page/private-governance.mp4";
 
 // Demo video thumbnail's
 export const CONFIDENTIAL_STABLECOINS_IMG = "/images/demo-page/confidential-stablecoins.png";
 export const FAIRATES_IMG = "/images/demo-page/fairates.jpg";
 export const FAIRY_COW_SWAP_IMG = "/images/demo-page/fairy-cow-img.png";
+export const TIME_MACHINE_IMG = "/images/demo-page/time-machine-img.png"
 export const FAIR_EX_IMG = "/images/demo-page/fair-ex-img.png";
 export const UNRUGGABLE_AI_IMG = "/images/demo-page/unruggable-ai.jpg"
 export const LAZY_KILLER_IMG = "/images/demo-page/lazy-killer-img.png";
 export const VERIFIABLE_RANDOMNESS_IMG = "/images/demo-page/verifiable-randomness-img.png";
 export const ON_CHAIN_TIME_BOMB_IMG = "/images/demo-page/onchain-time-bomb-img.png";
-export const TIME_CAPSULE_IMG = "/images/demo-page/time-capsule-img.png";
 export const PRIVATE_GOVERNANCE_IMG = "/images/demo-page/private-governance-img.png";
 
 // ******************** DEMOS PAGE - END ********************
