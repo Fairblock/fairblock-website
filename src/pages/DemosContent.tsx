@@ -34,18 +34,24 @@ const DemosContent = ({
             index % 2 === 0 ? "md:rotateY-left" : "md:rotateY-right"
           }`}
         >
-          <video
-            className="rounded-lg"
-            poster={demoVideoThumbnail}
-            preload="auto"
-            controls
-            src={demoVideoUrl}
-          ></video>{" "}
-          {}
+          {demoVideoUrl === "" ? (
+            <img className="rounded-lg" src={demoVideoThumbnail} alt={demoName} />
+          ) : (
+            <video
+              className="rounded-lg"
+              poster={demoVideoThumbnail}
+              preload="auto"
+              controls
+              src={demoVideoUrl}
+            ></video>
+          )}
         </div>
         <div className="md:w-2/5">
           <p className="mb-4">{demoDescription}</p>
-          <a className="flex items-center gap-2 text-neutral-600 dark:text-neutral-300 font-bold" href={demoLink}>
+          <a
+            className="flex items-center gap-2 text-neutral-600 dark:text-neutral-300 font-bold"
+            href={demoLink}
+          >
             Visit App <GoLinkExternal />
           </a>
         </div>
