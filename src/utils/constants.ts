@@ -761,7 +761,7 @@ export const DEMOS_ARRAY = [
     demoId: "cow-limit-order",
     demoName: "FairyCoW Swap",
     demoDescription:
-      "FairyCoW Swap showcases how programmable encryption can be used within CoWSwap limit orders. Available on Sepolia testnet.",
+      "More than 40% of daily U.S. trades are executed in dark pools to prevent information leakage, frontrunning, and market manipulation. Through a collaboration between Fairblock and CowSwap, FairyCoW brings these same protections onchain by encrypting limit orders and intents while they await execution. Now live on Sepolia testnet.",
     demoLink: FAIRY_COW_SWAP_LINK,
     demoVideoThumbnail: FAIRY_COW_SWAP_IMG,
     demoVideoUrl: FAIRY_COW_SWAP_VIDEO_URL,
@@ -779,7 +779,7 @@ export const DEMOS_ARRAY = [
     demoId: "FairEx",
     demoName: "FairEx",
     demoDescription:
-      "FairEx allows Arbitrum users to encrypt swaps and protect the contents of their orders from being leaked prior to execution.",
+      "FairEx is a protected limit order implementation for Uniswap, built on Arbitrum One. It allows users to encrypt their swaps, keeping the details of their limit orders confidential until execution. Once the trigger price is reached, the order is decrypted and executed onchain.",
     demoLink: FAIR_EX_LINK,
     demoVideoThumbnail: FAIR_EX_IMG,
     demoVideoUrl: FAIR_EX_VIDEO_URL,
