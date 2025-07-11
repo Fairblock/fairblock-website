@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import DemosContent from "./DemosContent";
 import { Star } from "../assets/svg/Star";
 import { DEMOS_ARRAY } from "../utils/constants";
-import { FAIR_BLOCK_RFP_LIST } from "../utils/links";
 import { TOP_BORDER_1, BOTTOM_BORDER_1 } from "../utils/images";
 
 const Demos = () => {
@@ -23,7 +22,7 @@ const Demos = () => {
           {/* DEMO - PARAGRAPH & BULLET POINTS CONTAINER */}
           <div>
             <p>
-             Fairblock is product-first. Rather than being a general-purpose infrastructure project focused solely on cryptography research or marketing, we prioritize building and collaborating on real, high-impact applications that deliver measurable value to users."
+             Fairblock is product-first. Rather than being a general-purpose infrastructure project focused solely on cryptography research or marketing, we prioritize building and collaborating on real, seamless, and high-impact applications that deliver measurable value to users."
             </p>
             
             {/* BULLET POINTS CONTAINER */}
@@ -67,7 +66,7 @@ const Demos = () => {
               />
             </div>
             <p>
-              Below is a showcase of our impactful and functional confidential applications (cApps):
+              Below is a showcase of our impactful and functional confidential applications (cApps).
             </p>
           </div>
         </div>
