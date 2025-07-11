@@ -47,7 +47,7 @@ const Demos = () => {
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Protected oncahin orders against forced liquidations, frontrunning, and market impact of large trades
+                    Protected onchain orders against forced liquidations, frontrunning, and market impact of large trades
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
@@ -55,7 +55,7 @@ const Demos = () => {
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Confidential AI inference on encrypted inputs
+                    Confidential AI inference on encrypted data
                   </li>
                 </ul>
               </div>
