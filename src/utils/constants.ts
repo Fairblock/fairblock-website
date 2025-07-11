@@ -752,7 +752,7 @@ export const DEMOS_ARRAY = [
     demoId: "fairates",
     demoName: "Fairates",
     demoDescription:
-      "One rate: Fixed-rate for all lenders and borrowers through sealed-bid auctions. Zero game: Fair price discovery. No centralized auctioneers or blackbox mechanisms powered by confidential computing",
+      "Fixed-rate lending through leaderless sealed-bid auctions accessible from Arbitrum One and soon Hyperliquid. The auction model is ideal for institutions and blue-chip assets, providing superior capital efficiency by only locking funds during the auction and promptly returning unfilled bids. It also ensures fair, slippage-free pricing by clearing all trades at a single market rate.",
     demoLink: FAIRATES_LINK,
     demoVideoThumbnail: FAIRATES_IMG,
     demoVideoUrl: FAIRATES_VIDEO_URL,
@@ -770,7 +770,7 @@ export const DEMOS_ARRAY = [
     demoId: "time-machine",
     demoName: "Time Machine",
     demoDescription:
-      "Encrypt your price prediction. Your alpha stays confidential. The earlier and more accurate you are, the more you earn.",
+      "Encrypt your price prediction. Your alpha stays confidential. The earlier and more accurate you are, the more you earn. It’s like options or Polymarket. Just simpler, with asymmetric payoffs. No greeks. No frontrunning. No manipulation.",
     demoLink: TIME_MACHINE_LINK,
     demoVideoThumbnail: TIME_MACHINE_IMG,
     demoVideoUrl: TIME_MACHINE_VIDEO_URL,
