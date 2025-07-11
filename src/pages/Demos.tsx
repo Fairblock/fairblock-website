@@ -22,7 +22,7 @@ const Demos = () => {
           {/* DEMO - PARAGRAPH & BULLET POINTS CONTAINER */}
           <div>
             <p>
-             Fairblock is product-first. Rather than being a general-purpose infrastructure project focused solely on cryptography research or marketing, we prioritize building and collaborating on real, seamless, and high-impact applications that deliver measurable value to users."
+             Fairblock is product-first. Rather than being a general-purpose infrastructure project focused solely on cryptography research or marketing, we prioritize building and collaborating on real, seamless, and high-impact applications that deliver measurable value to users.
             </p>
             
             {/* BULLET POINTS CONTAINER */}
@@ -39,7 +39,7 @@ const Demos = () => {
                 <ul className="flex flex-col gap-8 mb-5">
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Confidential and compliant stablecoins with encrypted amounts
+                  Confidential and Compliant Stablecoins for institutions, treasuries, and execution-sensitive funds
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
@@ -47,7 +47,7 @@ const Demos = () => {
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Protected orders against forced liquidations, frontrunning, and market impact of large trades
+                    Protected oncahin orders against forced liquidations, frontrunning, and market impact of large trades
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
