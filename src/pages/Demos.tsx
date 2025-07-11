@@ -23,16 +23,9 @@ const Demos = () => {
           {/* DEMO - PARAGRAPH & BULLET POINTS CONTAINER */}
           <div>
             <p>
-              Fairblock’s Dynamic Confidential Computing unlocks a new wave of
-              blockchain applications by unlocking incorruptible and efficient markets.
+             Fairblock is product-first. Rather than being a general-purpose infrastructure project focused solely on cryptography research or marketing, we prioritize building and collaborating on real, high-impact applications that deliver measurable value to users."
             </p>
-            <p>
-              Our long-term goal is to develop a trustworthy ecosystem centred
-              around manipulation-free intent and lending mechanisms, confidential and compliant stablecoin rails, and Confidential AI. We are particularly excited to collaborate with partners
-              and focus internally on our flagship confidential apps (cApps)
-              such as:
-            </p>
-
+            
             {/* BULLET POINTS CONTAINER */}
             <div className="my-12">
               <img
@@ -55,10 +48,6 @@ const Demos = () => {
                   </li>
                   <li>
                     <Star className="inline mr-3 w-4" />
-                    Dynamic price discovery for intents and fair token launches through leaderless sealed-bid auctions
-                  </li>
-                  <li>
-                    <Star className="inline mr-3 w-4" />
                     Protected orders against forced liquidations, frontrunning, and market impact of large trades
                   </li>
                   <li>
@@ -69,10 +58,6 @@ const Demos = () => {
                     <Star className="inline mr-3 w-4" />
                     Confidential AI inference on encrypted inputs
                   </li>
-                  <li>
-                    <Star className="inline mr-3 w-4" />
-                    Hidden-information GameFi such as parimutuel price prediction, mystery boxes, real pokers without trusted parties, and VRF service
-                  </li>
                 </ul>
               </div>
               <img
@@ -82,20 +67,7 @@ const Demos = () => {
               />
             </div>
             <p>
-              Below is a showcase of our early functional applications,
-              highlighting the variety and performance of use cases of our
-              confidential computing.
-            </p>
-            <p>
-              For a full list of ideas and instructions check out our{" "}
-              <a
-                className="text-blue-500 font-bold"
-                href={FAIR_BLOCK_RFP_LIST}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Builders Program.
-              </a>
+              Below is a showcase of our impactful and functional confidential applications (cApps):
             </p>
           </div>
         </div>
