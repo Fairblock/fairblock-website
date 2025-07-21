@@ -32,7 +32,7 @@ const About = () => {
             to="/cApps"
             className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-marlide font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48"
           >
-            Explore cApps
+            Explore Confidential Stablecoins and Protected Trading
           </Link>
         </div>
       </div>
