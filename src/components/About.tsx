@@ -33,7 +33,7 @@ const ConceptTag = () => {
     fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
   } ${tags[index].bg} ${tags[index].ring} text-black font-marlide text-base md:text-lg px-6 py-2 rounded-full 
   ring-1 shadow-sm hover:shadow-md hover:ring-2 hover:ring-opacity-60 hover:scale-[1.02] 
-  mx-auto lg:mx-0 text-center w-[9rem] whitespace-nowrap mt-6 cursor-pointer`}
+  mx-auto lg:mx-0 text-center w-[15rem] whitespace-nowrap mt-6 cursor-pointer`}
 >
   {tags[index].label}
 </div>
