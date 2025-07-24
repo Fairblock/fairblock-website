@@ -28,9 +28,11 @@ const About = () => {
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
             Fairblock leverages dynamic confidential computing to eliminate security risks, information leakage, and onchain manipulation—enabling new financial primitives, better pricing, and unlocking trustworthy consumer applications. We power the foundation for incorruptible markets and machines.
           </p>
+          
           <Link
             to="/cApps"
-            className="bg-slate-800 hover:bg-slate-700 text-white dark:bg-blue-950 dark:hover:bg-blue-900 border border-white/20 font-marlide font-medium px-6 py-2 rounded-3xl w-fit min-w-48"
+            className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 text-white font-marlide font-medium px-6 py-2 rounded-full w-fit min-w-60 text-sm md:text-base transition-all duration-200 transform hover:scale-105 shadow-md"
+
           >
             Explore Confidential Stablecoins and Protected Trading
           </Link>
