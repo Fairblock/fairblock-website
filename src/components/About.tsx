@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 // 🔁 Rotating animated tag with faster, cooler transition
 const ConceptTag = () => {
   const tags = [
-    { label: "Fixed-term Lending", bg: "bg-blue-300", ring: "ring-blue-400" },
-    { label: "Confidential Stablecoins", bg: "bg-purple-300", ring: "ring-purple-400" },
+    { label: "Confidential Stablecoins", bg: "bg-blue-300", ring: "ring-blue-400" },
+    { label: "Fixed-term Lending", bg: "bg-purple-300", ring: "ring-purple-400" },
     { label: "Limit Orders and Options", bg: "bg-orange-300", ring: "ring-orange-400" },
-    { label: "Unruggable AI", bg: "bg-green-300", ring: "ring-orange-400" },
+    { label: "Unruggable AI", bg: "bg-green-300", ring: "ring-green-400" },
   ];
 
   const [index, setIndex] = useState(0);
@@ -29,14 +29,13 @@ const ConceptTag = () => {
   return (
     <Link to="/cApps" aria-label="Explore Confidential Apps and Trading">
       <div
-        className={`transition-all duration-500 ease-out transform ${
-          fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-        } ${tags[index].bg} ${tags[index].ring} text-black font-marlide text-base md:text-lg px-6 py-2 rounded-full 
-        ring-1 shadow-sm hover:shadow-md hover:ring-2 hover:ring-opacity-60 hover:scale-[1.02] 
-        mx-auto lg:mx-0 text-center w-fit whitespace-nowrap mt-6 cursor-pointer`}
-      >
-        {tags[index].label}
-      </div>
+    className={`transition-all duration-500 ease-out transform ${
+    fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+    } ${tags[index].bg} ${tags[index].ring} text-black font-marlide text-base md:text-lg px-6 py-2 rounded-full 
+    ring-1 shadow-sm hover:shadow-md hover:ring-2 hover:ring-opacity-60 hover:scale-[1.02] 
+    mx-auto lg:mx-0 text-center min-w-[13rem] whitespace-nowrap mt-6 cursor-pointer`}
+    >
+
     </Link>
   );
 };
