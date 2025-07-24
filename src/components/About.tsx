@@ -55,8 +55,5 @@ const About = () => {
           <h2 className="font-marlide font-normal mb-6 text-3xl md:text-5xl">
             Trustworthy Rails for Open Finance.
           </h2>
+
           <p className="mb-6 md:text-xl">
-            Most Web2—and even many Web3—applications still rely on centralized
-            intermediaries, making them vulnerable to silent manipulation and
-            security risks. But fully exposed blockchains aren’t the answer
-            either: public execution leaks sensitive data like trading int
