@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-// 🔁 One rotating, clickable pill with darker pastel background
+// 🔁 Rotating animated tag with faster, cooler transition
 const ConceptTag = () => {
   const tags = [
     { label: "Explore cApps", bg: "bg-blue-300", ring: "ring-blue-400" },
-    { label: "Confidential Stablecoins", bg: "bg-purple-300", ring: "ring-purple-400" },
+    { label: "Confidential cUSD", bg: "bg-purple-300", ring: "ring-purple-400" },
     { label: "Protected Trading", bg: "bg-orange-300", ring: "ring-orange-400" },
   ];
 
@@ -13,11 +13,11 @@ const ConceptTag = () => {
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
-    const fadeOut = setTimeout(() => setFade(false), 2200);
+    const fadeOut = setTimeout(() => setFade(false), 1200);
     const cycle = setTimeout(() => {
       setIndex((prev) => (prev + 1) % tags.length);
       setFade(true);
-    }, 2500);
+    }, 1000);
 
     return () => {
       clearTimeout(fadeOut);
@@ -28,10 +28,10 @@ const ConceptTag = () => {
   return (
     <Link to="/cApps" aria-label="Explore Confidential Apps and Trading">
       <div
-        className={`transition-opacity duration-500 ${
-          fade ? "opacity-100" : "opacity-0"
+        className={`transition-all duration-500 ease-out transform ${
+          fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
         } ${tags[index].bg} ${tags[index].ring} text-black font-marlide text-base md:text-lg px-6 py-2 rounded-full 
-        ring-1 shadow-sm hover:shadow-md hover:scale-[1.02] transform transition-all duration-200 
+        ring-1 shadow-sm hover:shadow-md hover:ring-2 hover:ring-opacity-60 hover:scale-[1.02] 
         mx-auto lg:mx-0 text-center w-fit whitespace-nowrap mt-6 cursor-pointer`}
       >
         {tags[index].label}
@@ -71,7 +71,7 @@ const About = () => {
             Fairblock solves this with dynamic confidential computing — eliminating information leakage, protecting execution, and enabling secure, composable logic onchain. The result: new financial primitives, better pricing, and trustworthy applications that can't be manipulated.
           </p>
 
-          {/* 🔁 Animated Pill CTA */}
+          {/* 🔁 Upgraded animated pill */}
           <ConceptTag />
         </div>
       </div>
