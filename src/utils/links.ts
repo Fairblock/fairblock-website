@@ -14,7 +14,7 @@ export const FAIRATES_LINK = "https://fairates.fairblock.network";
 export const FAIRY_COW_SWAP_LINK = "https://swap.fairycow.fi/#/11155111/limit/WETH?tab=open&page=1";
 export const TIME_MACHINE_LINK = "https://timemachine.fairblock.network/";
 export const FAIR_EX_LINK = "https://dex.fairblock.network/swap";
-export const UNRUGGABLE_AI_LINK = "";
+export const UNRUGGABLE_AI_LINK = "https://github.com/Fairblock/Unruggable-AI";
 export const LAZY_KILLER_LINK = "https://lazykiller.fairblock.network/";
 export const VERIFIABLE_RANDOMNESS_LINK = "https://website-0xfairblock.vercel.app/applications/randomness";
 export const ON_CHAIN_TIME_BOMB_LINK = "https://bomb.fairblock.network/";
