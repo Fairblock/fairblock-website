@@ -10,7 +10,7 @@ export const FAIR_BLOCK_RFP_LIST = "http://fairblock.notion.site/Fairblock-Build
 
 // DEMO PAGE - APPS
 export const CONFIDENTIAL_STABLECOINS_LINK = "https://confidential-usdc-demo.vercel.app/";
-export const FAIRATES_LINK = "";
+export const FAIRATES_LINK = "https://fairates.fairblock.network";
 export const FAIRY_COW_SWAP_LINK = "https://swap.fairycow.fi/#/11155111/limit/WETH?tab=open&page=1";
 export const TIME_MACHINE_LINK = "https://timemachine.fairblock.network/";
 export const FAIR_EX_LINK = "https://dex.fairblock.network/swap";
