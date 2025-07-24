@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ConceptTags = () => {
   const tags = [
     { label: "Explore cApps", bg: "bg-blue-100", hover: "hover:bg-blue-200" },
-    { label: "Confidential cUSD", bg: "bg-purple-100", hover: "hover:bg-purple-200" },
+    { label: "Confidential Stablecoins", bg: "bg-purple-100", hover: "hover:bg-purple-200" },
     { label: "Protected Trading", bg: "bg-orange-100", hover: "hover:bg-orange-200" },
   ];
 
