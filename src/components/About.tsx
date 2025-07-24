@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+// ✅ Pure Tailwind + React animated callout (no external deps)
 const AnimatedCallout = () => {
   const phrases = [
     "Explore cApps",
@@ -9,26 +9,30 @@ const AnimatedCallout = () => {
     "Protected Trading",
   ];
   const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIndex((index + 1) % phrases.length);
-    }, 3000);
-    return () => clearTimeout(timeout);
+    const fadeOut = setTimeout(() => setFade(false), 2200);
+    const cycle = setTimeout(() => {
+      setIndex((prev) => (prev + 1) % phrases.length);
+      setFade(true);
+    }, 2500);
+
+    return () => {
+      clearTimeout(fadeOut);
+      clearTimeout(cycle);
+    };
   }, [index]);
 
   return (
     <Link to="/cApps" aria-label="Explore cApps and Confidential Tools">
-      <motion.div
-        key={phrases[index]}
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-        className="flex items-center gap-2 backdrop-blur-md bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 text-white font-marlide font-medium px-6 py-2 rounded-full w-fit text-sm md:text-base shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.03] cursor-pointer mx-auto lg:mx-0"
+      <div
+        className={`transition-opacity duration-500 ${
+          fade ? "opacity-100" : "opacity-0"
+        } bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 text-white font-marlide font-medium px-6 py-2 rounded-full w-fit text-sm md:text-base shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer mx-auto lg:mx-0`}
       >
         {phrases[index]}
-      </motion.div>
+      </div>
     </Link>
   );
 };
@@ -40,7 +44,6 @@ const About = () => {
       className="flex justify-between min-h-screen px-3 py-12 md:py-20"
     >
       <div className="flex flex-col lg:flex-row-reverse gap-12 items-center justify-center mx-auto max-w-screen-xl">
-        
         {/* ABOUT IMAGE CONTAINER */}
         <div className="flex flex-col gap-12 p-6 text-xl mx-auto w-full md:w-1/2 lg:w-[35%]">
           <img
