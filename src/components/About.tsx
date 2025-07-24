@@ -1,28 +1,40 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-// ✅ Clean clickable pill-style tag group
-const ConceptTags = () => {
+// 🔁 One rotating, clickable pill with darker pastel background
+const ConceptTag = () => {
   const tags = [
-    { label: "Explore cApps", bg: "bg-blue-100", hover: "hover:bg-blue-200" },
-    { label: "Confidential Stablecoins", bg: "bg-purple-100", hover: "hover:bg-purple-200" },
-    { label: "Protected Trading", bg: "bg-orange-100", hover: "hover:bg-orange-200" },
+    { label: "Explore cApps", bg: "bg-blue-300", ring: "ring-blue-400" },
+    { label: "Confidential Stablecoins", bg: "bg-purple-300", ring: "ring-purple-400" },
+    { label: "Protected Trading", bg: "bg-orange-300", ring: "ring-orange-400" },
   ];
 
+  const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const fadeOut = setTimeout(() => setFade(false), 2200);
+    const cycle = setTimeout(() => {
+      setIndex((prev) => (prev + 1) % tags.length);
+      setFade(true);
+    }, 2500);
+
+    return () => {
+      clearTimeout(fadeOut);
+      clearTimeout(cycle);
+    };
+  }, [index]);
+
   return (
-    <Link
-      to="/cApps"
-      aria-label="Explore cApps and Confidential Tools"
-      className="inline-block"
-    >
-      <div className="flex flex-wrap gap-3 justify-center lg:justify-start mt-6">
-        {tags.map((tag, index) => (
-          <span
-            key={index}
-            className={`text-black font-marlide text-sm md:text-base px-4 py-2 rounded-full shadow-sm ${tag.bg} ${tag.hover} transition-all duration-200 transform hover:-translate-y-0.5 hover:shadow-md cursor-pointer`}
-          >
-            {tag.label}
-          </span>
-        ))}
+    <Link to="/cApps" aria-label="Explore Confidential Apps and Trading">
+      <div
+        className={`transition-opacity duration-500 ${
+          fade ? "opacity-100" : "opacity-0"
+        } ${tags[index].bg} ${tags[index].ring} text-black font-marlide text-base md:text-lg px-6 py-2 rounded-full 
+        ring-1 shadow-sm hover:shadow-md hover:scale-[1.02] transform transition-all duration-200 
+        mx-auto lg:mx-0 text-center w-fit whitespace-nowrap mt-6 cursor-pointer`}
+      >
+        {tags[index].label}
       </div>
     </Link>
   );
@@ -59,8 +71,8 @@ const About = () => {
             Fairblock solves this with dynamic confidential computing — eliminating information leakage, protecting execution, and enabling secure, composable logic onchain. The result: new financial primitives, better pricing, and trustworthy applications that can't be manipulated.
           </p>
 
-          {/* 🔁 Beautiful clickable tag group */}
-          <ConceptTags />
+          {/* 🔁 Animated Pill CTA */}
+          <ConceptTag />
         </div>
       </div>
     </div>
