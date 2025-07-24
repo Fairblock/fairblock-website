@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 // 🔁 Rotating animated tag with faster, cooler transition
 const ConceptTag = () => {
   const tags = [
-    { label: "Explore cApps", bg: "bg-blue-300", ring: "ring-blue-400" },
-    { label: "Confidential cUSD", bg: "bg-purple-300", ring: "ring-purple-400" },
-    { label: "Protected Trading", bg: "bg-orange-300", ring: "ring-orange-400" },
+    { label: "Fixed-term Lending", bg: "bg-blue-300", ring: "ring-blue-400" },
+    { label: "Confidential Stablecoins", bg: "bg-purple-300", ring: "ring-purple-400" },
+    { label: "Limit Orders and Options", bg: "bg-orange-300", ring: "ring-orange-400" },
+    { label: "Unruggable AI", bg: "bg-green-300", ring: "ring-orange-400" },
   ];
 
   const [index, setIndex] = useState(0);
