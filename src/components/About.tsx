@@ -30,7 +30,7 @@ const About = () => {
           </p>
           <Link
             to="/cApps"
-            className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-marlide font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48"
+            className="bg-slate-800 hover:bg-slate-700 text-white dark:bg-blue-950 dark:hover:bg-blue-900 border border-white/20 font-marlide font-medium px-6 py-2 rounded-3xl w-fit min-w-48"
           >
             Explore Confidential Stablecoins and Protected Trading
           </Link>
