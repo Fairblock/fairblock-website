@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-// ✅ Pure Tailwind + React animated callout (no external deps)
 const AnimatedCallout = () => {
   const phrases = [
-    "Explore cApps",
-    "Confidential Stablecoins",
-    "Protected Trading",
+    { text: "Explore cApps", bg: "bg-blue-200" },
+    { text: "Confidential Stablecoins", bg: "bg-purple-200" },
+    { text: "Protected Trading", bg: "bg-orange-200" },
   ];
+
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -29,9 +29,9 @@ const AnimatedCallout = () => {
       <div
         className={`transition-opacity duration-500 ${
           fade ? "opacity-100" : "opacity-0"
-        } bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 text-white font-marlide font-medium px-6 py-2 rounded-full w-fit text-sm md:text-base shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer mx-auto lg:mx-0`}
+        } ${phrases[index].bg} text-black font-marlide font-medium px-6 py-2 rounded-full min-w-[14rem] text-base md:text-lg shadow-md hover:shadow-lg transform hover:scale-105 cursor-pointer mx-auto lg:mx-0 text-center`}
       >
-        {phrases[index]}
+        {phrases[index].text}
       </div>
     </Link>
   );
@@ -61,23 +61,13 @@ const About = () => {
           </h2>
 
           <p className="mb-6 md:text-xl">
-            Most Web2—and even many Web3—applications still rely on centralized
-            intermediaries, making them vulnerable to silent manipulation and
-            security risks. But fully exposed blockchains aren’t the answer
-            either: public execution leaks sensitive data like trading intents,
-            stablecoin transfers, liquidation triggers, solver bids, and AI
-            agent inputs. This leakage invites exploitation, distorts price
-            discovery, and holds back the next generation of high-impact
-            consumer applications.
+          Most Web2—and even many Web3—apps still rely on centralized intermediaries, exposing them to silent manipulation and systemic risk. But fully public blockchains aren’t the solution either: they leak sensitive information like trading intents, stablecoin transfers, liquidation triggers, auction bids, and private AI inputs. This visibility invites exploitation, skews price discovery, and prevents the next wave of high-impact financial applications.
           </p>
 
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
-            Fairblock leverages dynamic confidential computing to eliminate
-            security risks, information leakage, and onchain
-            manipulation—enabling new financial primitives, better pricing, and
-            unlocking trustworthy consumer applications. We power the foundation
-            for incorruptible markets and machines.
+          Fairblock solves this with dynamic confidential computing — eliminating information leakage, protecting execution, and enabling secure, composable logic onchain. The result: new financial primitives, better pricing, and trustworthy applications that can't be manipulated.
           </p>
+
 
           {/* 🔁 Animated CTA */}
           <AnimatedCallout />
