@@ -1,4 +1,37 @@
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
+const AnimatedCallout = () => {
+  const phrases = [
+    "Explore cApps",
+    "Confidential Stablecoins",
+    "Protected Trading",
+  ];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIndex((index + 1) % phrases.length);
+    }, 3000);
+    return () => clearTimeout(timeout);
+  }, [index]);
+
+  return (
+    <Link to="/cApps" aria-label="Explore cApps and Confidential Tools">
+      <motion.div
+        key={phrases[index]}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        className="flex items-center gap-2 backdrop-blur-md bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 text-white font-marlide font-medium px-6 py-2 rounded-full w-fit text-sm md:text-base shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.03] cursor-pointer mx-auto lg:mx-0"
+      >
+        {phrases[index]}
+      </motion.div>
+    </Link>
+  );
+};
 
 const About = () => {
   return (
@@ -23,20 +56,7 @@ const About = () => {
             Trustworthy Rails for Open Finance.
           </h2>
           <p className="mb-6 md:text-xl">
-          Most Web2—and even many Web3—applications still rely on centralized intermediaries, making them vulnerable to silent manipulation and security risks. But fully exposed blockchains aren’t the answer either: public execution leaks sensitive data like trading intents, stablecoin transfers, liquidation triggers, solver bids, and AI agent inputs. This leakage invites exploitation, distorts price discovery, and holds back the next generation of high-impact consumer applications.
-          </p>
-          <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
-            Fairblock leverages dynamic confidential computing to eliminate security risks, information leakage, and onchain manipulation—enabling new financial primitives, better pricing, and unlocking trustworthy consumer applications. We power the foundation for incorruptible markets and machines.
-          </p>
-          <Link
-            to="/cApps"
-             className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-marlide font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48"
-          >
-            Explore Confidential Stablecoins and Protected Trading
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
-export default About;
+            Most Web2—and even many Web3—applications still rely on centralized
+            intermediaries, making them vulnerable to silent manipulation and
+            security risks. But fully exposed blockchains aren’t the answer
+            either: public execution leaks sensitive data like trading int
