@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 const ConceptTag = () => {
   const tags = [
     { label: "Confidential Stablecoins", bg: "bg-blue-300", ring: "ring-blue-400" },
-    { label: "Fixed-Term Lending", bg: "bg-purple-300", ring: "ring-purple-400" },
-    { label: "Limit Orders and Options", bg: "bg-orange-300", ring: "ring-orange-400" },
-    { label: "Unruggable AI", bg: "bg-green-300", ring: "ring-green-400" },
+    { label: "Protected trading", bg: "bg-purple-300", ring: "ring-purple-400" },
   ];
 
   const [index, setIndex] = useState(0);
@@ -18,7 +16,7 @@ const ConceptTag = () => {
     const cycle = setTimeout(() => {
       setIndex((prev) => (prev + 1) % tags.length);
       setFade(true);
-    }, 1000);
+    }, 800);
 
     return () => {
       clearTimeout(fadeOut);
@@ -66,11 +64,11 @@ const About = () => {
           </h2>
 
           <p className="mb-6 md:text-xl">
-            Most Web2—and even many Web3—apps still rely on centralized intermediaries, exposing them to silent manipulation and systemic risk. But fully public blockchains aren’t the solution either: they leak sensitive information like trading intents, stablecoin transfers, liquidation triggers, auction bids, and private AI inputs. This visibility invites exploitation, skews price discovery, and prevents the next wave of high-impact financial applications.
+            Most Web2—and even many Web3—apps still rely on centralized intermediaries, exposing them to silent manipulation and systemic risk. However, fully exposed blockchains aren’t the solution either: they leak sensitive information, including stablecoin transfers, sensitive trading information, liquidation triggers, auction bids, and private AI inputs. This visibility invites exploitation, skews price discovery, and prevents the next wave of high-impact financial applications.
           </p>
 
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
-            Fairblock solves this with dynamic confidential computing — eliminating information leakage, protecting execution, and enabling secure, composable logic onchain. The result: new financial primitives, better pricing, and trustworthy applications that can't be manipulated.
+            Fairblock solves this with dynamic confidential computing — eliminating information leakage and manipulation. The result: encrypted stablecoins, new financial primitives, better pricing, and trustworthy financial rails.
           </p>
 
           {/* 🔁 Upgraded animated pill */}
