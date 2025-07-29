@@ -64,11 +64,9 @@ const About = () => {
           </h2>
 
           <p className="mb-6 md:text-xl">
-            Most Web2—and even many Web3—apps still rely on centralized intermediaries, exposing them to silent manipulation and systemic risk. However, fully exposed blockchains aren’t the solution either: they leak sensitive information, including stablecoin transfers, sensitive trading information, liquidation triggers, auction bids, and private AI inputs. This visibility invites exploitation, skews price discovery, and prevents the next wave of high-impact financial applications.
-          </p>
-
+            Most Web2 and even Web3 apps still rely on fully trusted intermediaries, exposing them to silent manipulation. However, fully exposed blockchains aren't the solution either: they leak sensitive information, including stablecoin transfers, liquidation triggers, and AI private inputs. This visibility invites exploitation, skews price discovery, and prevents the next wave of high impactful financial apps. 
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
-            Fairblock solves this with dynamic confidential computing — eliminating information leakage and manipulation. The result: encrypted stablecoins, new financial primitives, better pricing, and trustworthy financial rails.
+            Fairblock solves this with dynamic confidential computing eliminating information leakage and manipulation. The results: encrypted stablecoins, new financial primitives, better pricing and trustworthy financial rails for institutions.
           </p>
 
           {/* 🔁 Upgraded animated pill */}
