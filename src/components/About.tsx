@@ -60,11 +60,11 @@ const About = () => {
         {/* ABOUT TEXT CONTAINER */}
         <div className="w-full lg:w-3/5 text-center lg:text-left">
           <h2 className="font-marlide font-normal mb-6 text-3xl md:text-5xl">
-            Trustworthy Rails for Open Finance.
+            Trustworthy Rails for Open Finance
           </h2>
 
           <p className="mb-6 md:text-xl">
-            Most Web2—and even many Web3—applications rely on fully trusted intermediaries, making them vulnerable to security breaches and silent manipulation. But fully exposed blockchains aren't the answer either: they leak sensitive data like stablecoin transfers, liquidation triggers, and private AI inputs. Whether it's blind trust or reckless data exposure, both models invite exploitation, distort price discovery, and ultimately block the next wave of impactful onchain applications.
+            Most Web2 and even many Web3 applications rely on fully trusted intermediaries, making them vulnerable to security breaches and silent manipulation. But fully exposed blockchains aren't the answer either: they leak sensitive data like stablecoin transfers, liquidation triggers, and private AI inputs. Whether it's blind trust or reckless data exposure, both models invite exploitation, distort price discovery, and ultimately block the next wave of impactful onchain applications.
           </p>
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
             Fairblock solves this with dynamic confidential computing eliminating information leakage and manipulation. The results: encrypted stablecoins, new financial primitives, better pricing and trustworthy financial rails for institutions.
