@@ -335,37 +335,14 @@ export const NEWS_CARDS_ARRAY = [
   },
   {
     imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*nqeeFwC-zmdEylSXtIMGQg.png",
-    newsHeader: "Trustless and Unstoppable Al with Fairblock and Ritual",
-    newsBody:
-      "Fairblock and Ritual are collaborating for Trustless and Unstoppable Al economies through decentralized confidential computing.",
-    newsLink:
-      "https://medium.com/@0xfairblock/confidential-rituals-trustless-and-unstoppable-ai-with-dynamic-confidentiality-95ecaee66e4c",
-    site: "medium.com",
-    type: "news",
-  },
-  {
-    imageUrl:
       "https://miro.medium.com/v2/resize:fit:828/format:webp/0*Fadf2P2PH7_UvkNa",
     newsHeader:
-      "Permissionless and performant confidential computing for Arbitrum ecosystem",
+      "Trustless and performant confidential computing for Arbitrum ecosystem",
     newsBody:
       "Fairblock and Arbitrum are collaborating for permissionless and efficient confidential computing in EVM L2s.",
     newsLink:
-      "https://medium.com/@0xfairblock/unlocking-arbitrum-with-dynamic-confidentiality-c376f4dd3000",
-    site: "medium.com",
-    type: "news",
-  },
-  {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*7TfdDRazLdM0eumI",
-    newsHeader:
-      "Native Encryption for the OP Superchain with Camp and Fairblock",
-    newsBody:
-      "Fairblock and Camp Network are collaborating to bring confidential computing to Optimism Superchain and Camp Ecosystem of Al and consumer applications.",
-    newsLink:
-      "https://medium.com/@0xfairblock/native-encryption-for-the-op-superchain-with-camp-and-fairblock-e003dc62c648",
-    site: "medium.com",
+      "https://blog.arbitrum.io/how-fairblock-is-unlocking-confidential-payments-and-auctions-on-arbitrum/",
+    site: "arbitrum.io",
     type: "news",
   },
   {
