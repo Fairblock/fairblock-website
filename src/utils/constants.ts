@@ -101,10 +101,6 @@ export const FOOTER_LINKS_COLUMN_3 = {
   mainLabel: "For developers",
   links: [
     {
-      linkLabel: "Careers",
-      to: "/careers",
-    },
-    {
       linkLabel: "Builders Program",
       href: "https://fairblock.notion.site/Fairblock-Builders-Program-RFP-List-69cd0c7747904e89bd27257a359a80f1",
     },
